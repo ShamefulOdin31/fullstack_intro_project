@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   resources :characters
   resources :about, only: [:index]
   resources :races, only: [:index, :show]
+  resources :classes, only: [:index, :show]
   root to: 'characters#index'
 end

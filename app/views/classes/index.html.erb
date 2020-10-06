@@ -1,0 +1,18 @@
+<p id='notice'><% notice %></p>
+<br>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @all_classes.each do |classes| %>
+        <tr>
+          <td><%= classes.name %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
