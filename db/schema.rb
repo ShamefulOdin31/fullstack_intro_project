@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_06_151231) do
+ActiveRecord::Schema.define(version: 2020_10_06_165100) do
 
   create_table "char_classes", force: :cascade do |t|
     t.string "name"
@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 2020_10_06_151231) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
-    t.integer "race"
-    t.integer "class"
+    t.integer "race_id"
+    t.integer "char_class_id"
     t.integer "str"
     t.integer "inte"
     t.integer "dex"

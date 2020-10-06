@@ -1,0 +1,1 @@
+The data of Races and Classes is pulled from http://www.dnd5eapi.co/. They are needed to make a character in DND. The Name and stats for the characters are generated using Faker. Characters can only have one Race and Class but Races and Classes can have many Characters.
