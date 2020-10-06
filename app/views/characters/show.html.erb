@@ -1,0 +1,30 @@
+<div class="container">
+<br>
+<%= link_to 'Back', characters_path %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Class</th>
+      <th scope="col">Race</th>
+      <th scope="col">Strength</th>
+      <th scope="col">Intelligence</th>
+      <th scope="col">Dexterity</th>
+      <th scope="col">Wisdom</th>
+      <th scope="col">Consititution</th>
+      <th scope="col">Charisma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <td><%= @characters_single.name %></td>
+    <td><%= @characters_single.char_class.name %></td>
+    <td><%= @characters_single.race.race %></td>
+    <td><%= @characters_single.str %></td>
+    <td><%= @characters_single.inte %></td>
+    <td><%= @characters_single.dex %></td>
+    <td><%= @characters_single.wis %></td>
+    <td><%= @characters_single.con %></td>
+    <td><%= @characters_single.cha %></td>
+  </tbody>
+</table>
+</div>

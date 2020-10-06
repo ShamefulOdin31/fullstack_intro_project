@@ -4,4 +4,8 @@ class CharactersController < ApplicationController
     @races = Race.all
     @classes = CharClass.all
   end
+
+  def show
+    @characters_single = Character.find(params[:id])
+  end
 end
