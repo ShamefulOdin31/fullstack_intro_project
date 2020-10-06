@@ -1,0 +1,77 @@
+<p id='notice'><% notice %></p>
+
+
+<div class="container">
+<h1>Home</h1>
+  <div class="row">
+   <div class='col'>
+   <h5>Classes</h5>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Class Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @classes.each do |classes| %>
+            <tr>
+              <td><%= classes.name %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <div class='col'>
+      <h5>Races</h5>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Race Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @races.each do |race1| %>
+            <tr>
+              <td><%= race1.race %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col">
+    <div class='row'>
+      <h3>Characters</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Class</th>
+            <th scope="col">Race</th>
+            <th scope="col">Strength</th>
+            <th scope="col">Intelligence</th>
+            <th scope="col">Dexterity</th>
+            <th scope="col">Wisdom</th>
+            <th scope="col">Consititution</th>
+            <th scope="col">Charisma</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @characters.each do |character| %>
+            <tr>
+              <td><%= character.name %></td>
+              <td><%= character.char_class.name %></td>
+              <td><%= character.race.race %></td>
+              <td><%= character.str %></td>
+              <td><%= character.inte %></td>
+              <td><%= character.dex %></td>
+              <td><%= character.wis %></td>
+              <td><%= character.con %></td>
+              <td><%= character.cha %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
