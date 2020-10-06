@@ -1,0 +1,18 @@
+<p id='notice'><% notice %></p>
+<br>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @races.each do |race| %>
+        <tr>
+          <td><%= race.race %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

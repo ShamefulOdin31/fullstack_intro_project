@@ -1,6 +1,5 @@
 <p id='notice'><% notice %></p>
 
-
 <div class="container">
 <h1>Home</h1>
   <div class="row">
@@ -32,7 +31,7 @@
         <tbody>
           <% @races.each do |race1| %>
             <tr>
-              <td><%= race1.race %></td>
+              <td><%= link_to race1.race, race_path(:id => race1.id) %></td>
             </tr>
           <% end %>
         </tbody>
@@ -61,7 +60,7 @@
             <tr>
               <td><%= link_to character.name, character_path(:id => character.id) %></td>
               <td><%= character.char_class.name %></td>
-              <td><%= character.race.race %></td>
+              <td><%= link_to character.race.race, race_path(:id => character.race.id) %></td>
               <td><%= character.str %></td>
               <td><%= character.inte %></td>
               <td><%= character.dex %></td>
