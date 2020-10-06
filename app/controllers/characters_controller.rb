@@ -8,4 +8,11 @@ class CharactersController < ApplicationController
   def show
     @characters_single = Character.find(params[:id])
   end
+
+  def search
+
+  end
+  def search_results
+    @results = Character.where('name LIKE ?', "%#{params[:keywords]}%")
+  end
 end

@@ -1,0 +1,30 @@
+<div class="container">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Class</th>
+      <th scope="col">Race</th>
+      <th scope="col">Strength</th>
+      <th scope="col">Intelligence</th>
+      <th scope="col">Dexterity</th>
+      <th scope="col">Wisdom</th>
+      <th scope="col">Consititution</th>
+      <th scope="col">Charisma</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><%= link_to character.name, character_path(:id => character.id) %></td>
+        <td><%= link_to character.char_class.name, class_path(:id => character.char_class.id) %></td>
+        <td><%= link_to character.race.race, race_path(:id => character.race.id) %></td>
+        <td><%= character.str %></td>
+        <td><%= character.inte %></td>
+        <td><%= character.dex %></td>
+        <td><%= character.wis %></td>
+        <td><%= character.con %></td>
+        <td><%= character.cha %></td>
+      </tr>
+  </tbody>
+</table>
+</div>
