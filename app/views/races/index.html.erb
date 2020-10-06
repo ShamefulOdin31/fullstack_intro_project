@@ -1,6 +1,7 @@
 <p id='notice'><% notice %></p>
 <br>
 <div class="container">
+<h2>Races</h2>
   <table class="table">
     <thead>
       <tr>
@@ -10,7 +11,7 @@
     <tbody>
       <% @races.each do |race| %>
         <tr>
-          <td><%= race.race %></td>
+          <td><%= link_to race.race, race_path(:id => race.id) %></td>
         </tr>
       <% end %>
     </tbody>

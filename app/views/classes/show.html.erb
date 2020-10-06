@@ -1,7 +1,7 @@
 <div class="container">
 <br>
-<h2>Characters with Race</h2>
-<%= link_to 'Back', races_path %>
+<h2>Characters with class</h2>
+<%= link_to 'Back', classes_path %>
   <table class="table">
     <thead>
       <tr>
@@ -17,10 +17,10 @@
       </tr>
     </thead>
     <tbody>
-      <% @characters.each do |character| %>
+      <% @char_classes.each do |character| %>
         <tr>
           <td><%= link_to character.name, character_path(:id => character.id) %></td>
-          <td><%= link_to character.char_class.name, class_path(:id => character.char_class.id) %></td>
+          <td><%= link_to character.char_class.name, race_path(:id => character.char_class.id) %></td>
           <td><%= link_to character.race.race, race_path(:id => character.race.id) %></td>
           <td><%= character.str %></td>
           <td><%= character.inte %></td>

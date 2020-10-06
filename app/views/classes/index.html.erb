@@ -1,6 +1,7 @@
 <p id='notice'><% notice %></p>
 <br>
 <div class="container">
+<h2>Classes</h2>
   <table class="table">
     <thead>
       <tr>
@@ -10,7 +11,7 @@
     <tbody>
       <% @all_classes.each do |classes| %>
         <tr>
-          <td><%= classes.name %></td>
+          <td><%= link_to classes.name, class_path(:id => classes.id) %></td>
         </tr>
       <% end %>
     </tbody>

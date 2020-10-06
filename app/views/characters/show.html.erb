@@ -16,9 +16,9 @@
     </tr>
   </thead>
   <tbody>
-    <td><%= @characters_single.name %></td>
-    <td><%= @characters_single.char_class.name %></td>
-    <td><%= @characters_single.race.race %></td>
+    <td><%= link_to @characters_single.name, character_path(:id => @characters_single.id) %></td>
+    <td><%= link_to @characters_single.char_class.name, class_path(:id => @characters_single.char_class.id) %></td>
+    <td><%= link_to @characters_single.race.race, race_path(:id => @characters_single.race.id) %></td>
     <td><%= @characters_single.str %></td>
     <td><%= @characters_single.inte %></td>
     <td><%= @characters_single.dex %></td>
