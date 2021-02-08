@@ -1,24 +1,10 @@
-# README
+# Fullstack web development project #1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I created this project for my first project in my full stack web development class
 
-Things you may want to cover:
+#### Goals
+The goals of this project was to make API calls, persist the data from the calls to a local database, and then present the data in a web page. 
 
-* Ruby version
+I was able to accomplish this withing the time period provided and recieved a A as a final mark.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project uses Ruby on Rails, takes advantage of partials, views, models and rails style routing.
